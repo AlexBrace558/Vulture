@@ -1,0 +1,172 @@
+author			= "Tiber Brutus";
+onLoadName		= "Operation Vulture";
+onLoadMission	= "ION PMCs are sent to the Horizon Islands";
+loadScreen		= "flag.jpg";
+
+class CfgDebriefing
+{
+	class End1
+	{
+		title = "Operation Success";
+		subtitle = "";
+		description = "Thanks to the efforts of ION security forces, Syndikat has been dealt a deadly blow. Demonstrating their abilities in the field they have impressed the Horizon Island military who have agreed to expand IONs operation theater and duties.";
+		pictureBackground = "flag.jpg";
+	};
+    class End2
+	{
+		title = "Operation Failed";
+		subtitle = "";
+		description = "";
+		pictureBackground = "";
+	};
+};
+
+class CfgSounds
+
+{
+
+ tracks[]={};
+
+ class Track01
+ {
+
+  name = "Track01";
+
+  sound[] = {"\brief.wav", 250, 1.0};
+
+  titles[] = {};
+
+ };
+
+};
+
+
+
+class CfgORBAT
+{
+	class ion
+	{
+		id = 1;
+		idType = 0;
+		side = "West";
+		size = "Company";
+		type = "Unknown";
+		insignia = "";
+		commander = "Richard Gordon";
+		commanderRank = "Major";
+		text = "%1 %2 %3";
+		textShort = "ION Pacific Task Force";
+		color[] = {0,0.3,0.6,1};
+		description = "This task force has been specifically designed to be rapidly deployed to any pacific theater, it is therefore much smaller than its North American, South American, African and European counterparts. This unit emphasizes the use of smaller strike teams that are backed up by sophisticated air and electronic warfare platforms. As part of the Horizon Islands contract this task force has been given full control of all the Horizon island military facilities on the island of Tuvanaka.";
+		assets[] = {};
+
+		class ion1
+		{
+			id = 1;
+			idType = 0;
+			side = "West";
+			size = "Platoon";
+			type = "AttackRecon";
+			insignia = "";
+			commander = "Arthur Kesling";
+			commanderRank = "Captain";
+			text = "%1 %2 %3";
+			textShort = "Air Assault Unit";
+			color[] = {0,0.3,0.6,1};
+			description = "Acting as the spearhead of any task force assault, this unit can be rapidly deployed behind enemy lines via its agile transport helicopters. And whilst this unit may lack mechanized or armored firepower, it makes up for this with its own Close Air Support (CAS) platform. This unit thrives in chaos and is frequently used in operations where the goal is to decapitate the enemy's ability to fight through the use of assaination, subterfuge and demolition.";
+			assets[] = {
+									{"UK3CB_ION_B_Woodland_Benches_MH9", 3},
+									{"UK3CB_ION_B_Woodland_MELB_AH6M", 1}
+			};
+
+		};
+
+		class ion2
+		{
+			id = 2;
+			idType = 0;
+			side = "West";
+			size = "Platoon";
+			type = "UAV";
+			insignia = "";
+			commander = "Harry Nicholson";
+			commanderRank = "Captain";
+			text = "%1 %2 %3";
+			textShort = "UAV Unit";
+			color[] = {0,0.3,0.6,1};
+			description = "The eyes in the sky for the Pacific Task Force, this unit utilizes both lethal and non lethal drones to recon operation theaters and provide Close Air Support (CAS) for the ground assets. Due to the moral questions raised in their use of counter insurgency operations, this unit goes to great lengths to keep their assets undetected throughout all operations.";
+			assets[] = {
+									{"B_UAV_02_dynamicLoadout_F", 1}
+			};
+
+		};
+
+		class ion3
+		{
+			id = 3;
+			idType = 0;
+			side = "West";
+			size = "Platoon";
+			type = "Maritime";
+			insignia = "";
+			commander = "William Brown";
+			commanderRank = "Captain";
+			text = "%1 %2 %3";
+			textShort = "Marine Assault Unit";
+			color[] = {0,0.3,0.6,1};
+			description = "The go to experts in marine warfare, this unit utilizes surface and submersible assets that allow them to perform offensive/covert operations. This unit is frequently deployed in counter piracy operations in the pacific and are expected to play a critical role in countering Syndikat’s expansionism.";
+			assets[] = {
+									{"B_Boat_Armed_01_minigun_F", 3},
+									{"B_SDV_01_F", 3}
+			};
+
+		};
+
+		class ion4
+		{
+			id = 4;
+			idType = 0;
+			side = "West";
+			size = "Platoon";
+			type = "MotorizedInfantry";
+			insignia = "";
+			commander = "Daniel Poplin";
+			commanderRank = "Captain";
+			text = "%1 %2 %3";
+			textShort = "Urban Assault Unit";
+			color[] = {0,0.3,0.6,1};
+			description = "A recent addition to the Pacific task force, the urban assault unit is frequently overlooked but plays a critical role in day to day operations. They are the task force’s experts in urban warfare and are frequently used in counter insurgency and pacification operations. However in light of sensitivity of the Pacific task force’s mission scope, they are being tasked with mostly VIP protection and patrolling the island of Tuvanaka.";
+			assets[] = {
+									{"UK3CB_ION_B_Woodland_M1030", 3},
+									{"UK3CB_ION_B_Woodland_Hilux", 3},
+									{"UK3CB_ION_B_Woodland_Hilux_M2", 2}
+			};
+
+		};
+
+		class ion5
+		{
+			id = 5;
+			idType = 0;
+			side = "West";
+			size = "Platoon";
+			type = "Support";
+			insignia = "";
+			commander = "George Falkner";
+			commanderRank = "Captain";
+			text = "%1 %2 %3";
+			textShort = "Supply Unit";
+			color[] = {0,0.3,0.6,1};
+			description = "An army marches on its stomach. That is the motto of the supply unit, who are critical in ensuring that all combat units in the Pacific task force are properly equipped for any operation. Whilst they are frequently seen operating support ground vehicles, they also use sling load capable helicopters that can allow them to rapidly establish new supply depots anywhere in an operations theater. ";
+			assets[] = {
+									{"UK3CB_ION_B_Woodland_T810_Reammo", 3},
+									{"UK3CB_ION_B_Woodland_T810_Refuel", 3},
+									{"UK3CB_ION_B_Woodland_T810_Repair", 3},
+									{"UK3CB_ION_B_Woodland_Transit_Cargo", 2},
+									{"UK3CB_ION_B_Woodland_Bell412_Utility", 2},
+									{"UK3CB_ION_B_Woodland_Merlin", 1}
+			};
+
+		};
+	};
+};
